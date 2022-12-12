@@ -21,11 +21,8 @@ namespace jokenpo
         public void roll()
         {
             Random rand = new Random();
-            int randN1 = rand.Next(0, 3);
-            int randN2 = rand.Next(0, 3);
-
-            pickN1 = randN1;
-            pickN2 = randN2;
+            pickN1 = rand.Next(0, 3);
+            pickN2 = rand.Next(0, 3);
         }
     }
 }
