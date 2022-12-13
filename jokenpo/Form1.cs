@@ -40,7 +40,7 @@ namespace jokenpo
             } else
             {
                 p2Score += 1;
-                label7.Text = "Voce perdeu!";
+                label7.Text = "Você perdeu!";
                 label5.Text = $"Pontuação = {p1Score}";
                 label6.Text = $"Pontuação = {p2Score}";
             }
