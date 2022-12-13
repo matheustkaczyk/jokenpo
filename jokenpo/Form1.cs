@@ -29,17 +29,18 @@ namespace jokenpo
                 (game.options[game.pickN1] == "Papel" && game.options[game.pickN2] == "Pedra")
                 )
             {
-                MessageBox.Show("Você venceu!");
+
                 p1Score += 1;
+                label7.Text = "Você venceu!";
                 label5.Text = $"Pontuação = {p1Score}";
                 label6.Text = $"Pontuação = {p2Score}";
             } else if(game.options[game.pickN1] == game.options[game.pickN2])
             {
-                MessageBox.Show("Empatou!");
+                label7.Text = "Empatou!";
             } else
             {
-                MessageBox.Show("Voce perdeu!");
                 p2Score += 1;
+                label7.Text = "Voce perdeu!";
                 label5.Text = $"Pontuação = {p1Score}";
                 label6.Text = $"Pontuação = {p2Score}";
             }
