@@ -49,9 +49,35 @@ namespace jokenpo
         private void button1_Click(object sender, EventArgs e)
         {
             game.roll();
-
             label1.Text = game.options[game.pickN1];
             label2.Text = game.options[game.pickN2];
+
+            switch(game.pickN1)
+            {
+                case 0:
+                    pictureBox1.Image = game.rockImage;
+                    break;
+                case 1:
+                    pictureBox1.Image = game.paperImage;
+                    break;
+                case 2:
+                    pictureBox1.Image = game.scissorsImage;
+                    break;
+            }
+
+            switch (game.pickN2)
+            {
+                case 0:
+                    pictureBox2.Image = game.rockImage;
+                    break;
+                case 1:
+                    pictureBox2.Image = game.paperImage;
+                    break;
+                case 2:
+                    pictureBox2.Image = game.scissorsImage;
+                    break;
+            }
+
             winner();
         }
     }

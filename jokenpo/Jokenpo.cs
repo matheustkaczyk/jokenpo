@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,17 @@ namespace jokenpo
             "Tesoura"
         };
 
+        enum images
+        {
+
+        }
+
         public int pickN1;
         public int pickN2;
+
+        public Image rockImage = Image.FromFile("C:\\Users\\PC\\source\\repos\\jokenpo\\jokenpo\\assets\\pedra.png");
+        public Image paperImage = Image.FromFile("C:\\Users\\PC\\source\\repos\\jokenpo\\jokenpo\\assets\\papel.png");
+        public Image scissorsImage = Image.FromFile("C:\\Users\\PC\\source\\repos\\jokenpo\\jokenpo\\assets\\tesoura.png");
 
         public void roll()
         {
